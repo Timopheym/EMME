@@ -1,0 +1,40 @@
+{
+"P" : {
+ "name" : "S",
+ "fields":[
+   {
+       "name":4,
+       "connect":[]
+   },
+   {
+       "name":6,
+       "connect":[{
+               "type":"convert",
+               "victim":8
+           }]
+   },
+   {
+       "name":8,
+       "connect":[{
+               "type":"convert",
+               "victim":6
+           },{
+               "type":"input"
+           },{
+               "type":"output"
+           }]
+   },
+   {
+       "name":5,
+       "connect":[{
+               "type":"input"
+           },{
+               "type":"output"
+           }]
+   }
+ ],
+ "R" : {},
+ "Q" : {},
+ "K" : {}
+}
+}
