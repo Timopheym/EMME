@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'fontello-a895d4d7';
+  src: url('fontello-a895d4d7.eot');
+  src: url('fontello-a895d4d7.eot?#iefix') format('embedded-opentype'),
+       url('fontello-a895d4d7.woff') format('woff'),
+       url('fontello-a895d4d7.ttf') format('truetype'),
+       url('fontello-a895d4d7.svg#fontello-a895d4d7') format('svg');
+  font-weight: normal; font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: fontello-a895d4d7;
+  font-style: normal;
+
+  /* font-size: 14px; */
+
+  display: inline-block;
+  width: 1.1em;
+  margin-right: .1em;
+  text-align: center;
+}
+
+.the-icons li {
+  font-size: 14px;
+  line-height: 24px;
+  height: 24px;
+}
+
+.icon-pause:before { content: "⎉"; } /* '\2389' */
+.icon-stop:before { content: "▪"; } /* '\25aa' */
+.icon-play:before { content: "▶"; } /* '\25b6' */
+.icon-mail:before { content: "✉"; } /* '\2709' */
+.icon-ok-circle:before { content: "✔"; } /* '\2714' */
+.icon-cancel-circle:before { content: "✖"; } /* '\2716' */
+.icon-plus-circle:before { content: "➕"; } /* '\2795' */
+.icon-zoom-in:before { content: ""; } /* '\e750' */
+.icon-zoom-out:before { content: ""; } /* '\e751' */
+.icon-user:before { content: "👤"; } /* '\1f464' */
+.icon-key-inv:before { content: "🔑"; } /* '\1f511' */

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'fontello-df313b80';
+  src: url('fontello-df313b80.eot');
+  src: url('fontello-df313b80.eot?#iefix') format('embedded-opentype'),
+       url('fontello-df313b80.woff') format('woff'),
+       url('fontello-df313b80.ttf') format('truetype'),
+       url('fontello-df313b80.svg#fontello-df313b80') format('svg');
+  font-weight: normal; font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: fontello-df313b80;
+  font-style: normal;
+
+  /* font-size: 14px; */
+
+  display: inline-block;
+  width: 1.1em;
+  margin-right: .1em;
+  text-align: center;
+}
+
+.the-icons li {
+  font-size: 14px;
+  line-height: 24px;
+  height: 24px;
+}
+
+.icon-cancel-circle:before { content: "✖"; } /* '\2716' */
+.icon-plus-circle:before { content: "➕"; } /* '\2795' */
+.icon-minus-circle:before { content: "➖"; } /* '\2796' */

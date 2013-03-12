@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html style="height: 100%; "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>Impress.js</title>
+   
+   <style type="text/css">
+        body  {
+        background-color: #ed7;
+        color: #400;
+        font-size: 2em;
+        }
+        .step  {
+        width: 1000px;
+        }
+        img  {
+        margin-left: 450px;
+        }
+        .no-support-message  {
+        display: none;
+        }
+        .impress-not-supported .no-support-message  {
+        display: block;
+        color: red;
+        font-size: 2em;
+        }
+    </style>
+</head>
+<body style="height: 100%; overflow-x: hidden; overflow-y: hidden; ">
+<div id="impress" class="step-step-1" style="position: absolute; -webkit-transform-origin-x: 0%; -webkit-transform-origin-y: 0%; -webkit-transition-property: all; -webkit-transition-duration: 1s; -webkit-transition-timing-function: ease-in-out; -webkit-transform-style: preserve-3d; top: 50%; left: 50%; -webkit-perspective: 1000px; -webkit-transform: scale(1); -webkit-transition-delay: 500ms; "><div class="canvas" style="position: absolute; -webkit-transform-origin-x: 0%; -webkit-transform-origin-y: 0%; -webkit-transition-property: all; -webkit-transition-duration: 1s; -webkit-transition-timing-function: ease-in-out; -webkit-transform-style: preserve-3d; -webkit-transform: rotateZ(0deg) rotateY(0deg) rotateX(0deg) translate3d(0px, 0px, 0px); -webkit-transition-delay: 0ms; ">
+<div class="no-support-message">
+    Увы! Impress.js пока поддерживает только Chrome и Safari.
+</div>
+<div class="step active" id="step-1" style="position: absolute; -webkit-transform: translate(-50%, -50%) translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); -webkit-transform-style: preserve-3d; ">
+    <h1>Первый шаг - без атрибутов:</h1>
+    &lt;div class="step"&gt;
+</div>
+
+<div class="step" data-x="1000" data-y="1000" id="step-2" style="position: absolute; -webkit-transform: translate(-50%, -50%) translate3d(1000px, 1000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); -webkit-transform-style: preserve-3d; ">
+    <h1>Второй шаг - трансляция:</h1>
+    &lt;div class="step" data-x="1000" data-y="1000"&gt;
+</div>
+
+<div class="step" data-x="3000" data-y="-1000" data-scale="4" id="step-3" style="position: absolute; -webkit-transform: translate(-50%, -50%) translate3d(3000px, -1000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(4); -webkit-transform-style: preserve-3d; ">
+    <h1>Третий шаг - масштаб:</h1>
+    &lt;div class="step" data-x="3000" data-y="-1000" data-scale="4"&gt;
+</div>
+
+<div class="step" data-x="-6100" data-y="-3800" data-rotate="180" data-scale="40" id="step-4" style="position: absolute; -webkit-transform: translate(-50%, -50%) translate3d(-6100px, -3800px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(180deg) scale(40); -webkit-transform-style: preserve-3d; ">
+    <h1>Четвёртый шаг - поворот:</h1>
+    &lt;div class="step" data-x="-1700" data-y="-3000" data-rotate="180" data-scale="40"&gt;
+</div>
+
+<div class="step" data-x="8000" data-y="-8100" data-rotate-x="30" data-rotate-z="-29" id="step-5" style="position: absolute; -webkit-transform: translate(-50%, -50%) translate3d(8000px, -8100px, 0px) rotateX(30deg) rotateY(0deg) rotateZ(-29deg) scale(1); -webkit-transform-style: preserve-3d; ">
+    <h1>Пятый шаг - 3D:</h1>
+    &lt;div class="step" data-x="8000" data-y="-8100" data-rotate-x="30" data-rotate-z="-29"&gt;
+</div>
+
+<div class="step" data-x="7963.7" data-y="-8106.3" data-scale="0.04" id="step-6" style="position: absolute; -webkit-transform: translate(-50%, -50%) translate3d(7963.7px, -8106.3px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.04); -webkit-transform-style: preserve-3d; ">
+    <img src="./i/small_nuance.png">
+</div>
+</div></div>
+
+<script type="text/javascript" src="./js/impress.js"></script>
+
+
+</body></html>

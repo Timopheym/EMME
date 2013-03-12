@@ -1,0 +1,182 @@
+div#app
+    header
+        a(href="#") Профиль
+        a(href="#") Помощь
+        a(href="logout") Выйти
+    section#artels.ui-tabs.ui-widget.ui-widget-content.ui-corner-all
+        ul#artels-menu.ui-tabs-nav.ui-helper-reset.ui-helper-clearfix.ui-widget-header.ui-corner-all
+
+            li.plus.ui-state-default.ui-corner-top
+              a#plusArtel(href="#") +
+        section#artels-content
+            section#pages
+                ul#page-menu
+                    li.thirst
+                      a#menu-link-model(href='#model') Модель
+                    li
+                      a#menu-link-graphs(href='#graphs') Графики
+                    li
+                      a#menu-link-phigraph(href='#graphPhi') График φ
+                section#page-content
+                    #model.page
+                        i.icon-cancel-circle(style="float:right")
+                        section#artel.section
+                            canvas#vizualizator
+                            div#viz-navigation
+                                div#slider
+                                div#viz-buttons
+                                    i.icon-play
+                                    i.icon-pause
+                                    i.icon-stop
+                        i.icon-ok-circle.status-good
+                    #graphs.page
+                        div#g1.graph
+                            h1  Пользовательское достояние (K)
+                            div.data
+                        div#g2.graph
+                            h1  Пользовательское достояние (Q)
+                            div.data
+                        div#g3.graph
+                            h1  Расп. достояние
+                            div.data
+                        div#g4.graph
+                            h1  Влад.Вед. достояние (Q)
+                            div.data
+                        div#bigGraph
+                        i.icon-resize-small-alt
+                    #graphPhi.page
+                        div#phiContent
+            form#attrsForm
+                section#attrs.section
+                    div#acc
+                        h3
+                            a(href="#") Настройки фирмы
+                        div
+                            div#timeAttrs.attrSection.smallVals
+                                fieldset
+                                    div.control-group
+                                        Шаг
+                                        input#h_val(type='number', value='1', name='h')
+                                    div.control-group
+                                        Период
+                                        input#I_val(type='number', value='1000', name='I')
+                            div#timingAttrs.tabs-bottom.attrSection
+                                ul
+                                    li
+                                        a(href="#uch-1") Уч. 1
+                                    li.plus
+                                        a#plusUch(href="#") +
+                                div.tabs-spacer
+                                div#uch-1.uch
+                            div#propertyAttrs.attrSection
+                                table
+                                    tr
+                                        th(colspan='2') Начальные значения достояний
+                                    tr
+                                        th
+                                            label(for='c0_K') Пользовательское (K)
+                                            br
+                                            input#K_val(type='number', value='1', name='K')
+                                        th
+                                            label(for='c0_Q') Пользовательское (Q)
+                                            br
+                                            input#Q_val(type='number', value='1', name='Q')
+                                    tr
+                                        th
+                                            label(for='c0_R') Распределительное
+                                            br
+                                            input#R_val(type='number', value='1', name='R')
+                                        th
+                                            label(for='c0_S') Влад.\Вед.
+                                            br
+                                            input#S_val(type='number', value='1', name='S')
+                        h3
+                            a(href="#") Настройки модели
+                        div
+                            label Для целевой функции
+                            div.attrSection.smallVals
+                                div.control-group(style="float:left")
+                                    div.control-group(title="k1")
+                                        label(for='m_k1') k1:&nbsp
+                                        input#k1_val(type='number', value='1', name='k1')
+                                    div.control-group(title="k2")
+                                        label(for='m_k2') k2:&nbsp
+                                        input#k2_val(type='number', value='1', name='k2')
+                                    div.control-group(title="k3")
+                                        label(for='m_k3') k3:&nbsp
+                                        input#k3_val(type='number', value='1', name='k3')
+                                    div.control-group(title="k4")
+                                        label(for='m_k4') k4:&nbsp
+                                        input#k4_val(type='number', value='1', name='k4')
+                                div.control-group(style="float:left")
+                                    div.control-group(title="k5")
+                                        label(for='m_k5') k5:&nbsp
+                                        input#k5_val(type='number', value='1', name='k5')
+                                    div.control-group(title="k6")
+                                        label(for='m_k6') k6:&nbsp
+                                        input#k6_val(type='number', value='1', name='k6')
+                                    div.control-group(title="k7")
+                                        label(for='m_k7') k7:&nbsp
+                                        input#k7_val(type='number', value='1', name='k7')
+                                    div.control-group(title="k8")
+                                        label(for='m_k8') k8:&nbsp
+                                        input#k8_val(type='number', value='1', name='k8')
+                            label Основное уравнение
+                            div.attrSection.smallVals
+                                div.control-group(style="float:left")
+                                    div.control-group(title="e1")
+                                        label(for='m_e1') e1:&nbsp
+                                        input#e1_val(type='number', value='1', name='e1')
+                                    div.control-group(title="e2")
+                                        label(for='m_e2') e2:&nbsp
+                                        input#e2_val(type='number', value='1', name='e2')
+                                    div.control-group(title="e3")
+                                        label(for='m_e3') e3:&nbsp
+                                        input#e3_val(type='number', value='1', name='e3')
+                                div.control-group(style="float:left")
+                                    div.control-group(title="b1")
+                                        label(for='m_b1') e1:&nbsp
+                                        input#b1_val(type='number', value='1', name='b1')
+                                    div.control-group(title="b2")
+                                        label(for='m_b2') b2:&nbsp
+                                        input#b2_val(type='number', value='1', name='b2')
+                                    div.control-group(title="b3")
+                                        label(for='m_b3') b3:&nbsp
+                                        input#b3_val(type='number', value='1', name='b3')
+                            div.attrSection.smallVals
+                                div.control-group(style="float:left")
+                                    div.control-group(title="k1")
+                                        label(for='m_k1m') k1:&nbsp
+                                        input#k1m_val(type='number', value='1', name='k1m')
+                                    div.control-group(title="k2")
+                                        label(for='m_k2m') k2:&nbsp
+                                        input#k2m_val(type='number', value='1', name='k2m')
+                                div.control-group(style="float:left")
+                                    div.control-group(title="N")
+                                        label(for='m_N') N:&nbsp
+                                        input#N_val(type='number', value='1', name='N')
+                                    div.control-group(title="a")
+                                        label(for='m_a') a:&nbsp
+                                        input#a_val(type='number', value='1', name='a')
+                        h3
+                            a(href="#") История
+                        div
+                            a День четвертый
+                                br
+                            a День третий
+                                br
+                            a День второй
+                                br
+                            a День первый
+                                br
+                            input(type="button",value="Откатить")
+                section#buttons.section
+                                    input#calculate(type="button", value="Считать")
+                                    input#reset(type="button", value="Сбросить")
+                                    input#todefault(type="button", value="Восстановить умолчания")
+                                    input#save(type="button", value="Сохранить")
+                                    input#export(type="button", value="Экспортировать")
+    script(type="text/javascript", src="/javascripts/main.js")
+    script(type="text/paperscript", src="/javascripts/vizualizator.js", canvas="vizualizator")
+
+

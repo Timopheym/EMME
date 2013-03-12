@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg>
+<metadata>
+Created by FontForge 20100429 at Thu May 17 10:32:11 2012
+ By root
+Copyright (C) 2012 by original authors @ fontello.com
+</metadata>
+<defs>
+<font id="fontello-53f732e5" horiz-adv-x="928" >
+  <font-face 
+    font-family="Fontello"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1000"
+    panose-1="2 0 6 9 0 0 0 0 0 0"
+    ascent="800"
+    descent="-200"
+    bbox="18 -127 911 766"
+    underline-thickness="50"
+    underline-position="-100"
+    unicode-range="U+2714-2716"
+  />
+<missing-glyph 
+d="M33 0v666h265v-666h-265zM66 33h199v600h-199v-600z" />
+    <glyph glyph-name=".notdef" 
+d="M33 0v666h265v-666h-265zM66 33h199v600h-199v-600z" />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" 
+ />
+    <glyph glyph-name="uni2714" unicode="&#x2714;" 
+d="M464.5 766q184.5 0 315.5 -131t131 -315.5t-131 -315.5t-315.5 -131t-315.5 131t-131 315.5t131 315.5t315.5 131zM395 113l348 348l-79 79l-269 -268l-126 126l-79 -78z" />
+    <glyph glyph-name="uni2716" unicode="&#x2716;" 
+d="M464.5 766q184.5 0 315.5 -131t131 -315.5t-131 -315.5t-315.5 -131t-315.5 131t-131 315.5t131 315.5t315.5 131zM685 178l-141 142l141 141l-79 79l-142 -141l-141 141l-79 -79l141 -141l-141 -142l79 -79l141 141l142 -141z" />
+  </font>
+</defs></svg>
